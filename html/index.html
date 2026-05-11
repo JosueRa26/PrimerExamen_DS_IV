@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,12 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
-    <header></header>
+  <body>
+    <header>
+      <div class="Logo">
+        <h1>TechStore</h1>
+      </div>
+      <nav>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#Productos">Productos</a></li>
+        <li><a href="#Ofertas">Ofertas</a></li>
+      </nav>
+    </header>
 
+    <main class="main">
+      <section class="hero">
+        <div class="hero-text">
+          <h2>La mejor tecnología al mejor precio</h2>
+          <p>Encuentra teléfonos, laptops y accesorios gamer.</p>
 
+          <button>Ver productos</button>
+        </div>
+      </section>
+      <section class="products" id="products"></section>
+      <script src="../javaScript/Products.js"></script>
+    </main>
 
     <footer>
         <div class="footer-container">
