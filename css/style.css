@@ -1,0 +1,42 @@
+
+
+
+
+/*stilo en grid para cartas de productos*/
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #04408f;
+  font-weight: bold;
+}
