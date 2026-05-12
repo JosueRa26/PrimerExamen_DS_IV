@@ -1,156 +1,277 @@
-
+/* body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d9dfeb;
 }
 
+.hero {
+  padding: 100px 40px;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/33384272/pexels-photo-33384272.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text h2 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 32px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #00bfff;
+  color: #1a1a2e;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero-btn:hover {
+  background-color: #009ecc;
+}
+
+/* lista de productos */
 .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
 }
 
 .card {
-    background: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 20px;
-    transition: 0.3s ease;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
 .card h3 {
-    margin: 15px 10px 10px;
-    font-size: 1.3rem;
-    color: #222;
+  margin: 15px 10px 10px;
+  font-size: 1.3rem;
+  color: #222;
 }
 
 .card p {
-    font-size: 1.1rem;
-    color: #04408f;
-    font-weight: bold;
+  font-size: 1.1rem;
+  color: #04408f;
+  font-weight: bold;
 }
 
+/* sericios */
+.services {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.services__title {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  color: #00bfff;
+}
+
+.services__subtitle {
+  color: #000000;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.service-card {
+  flex: 1 1 200px;
+  max-width: 260px;
+  background-color: #ffffff;
+  border: 1px solid #e0e7ff;
+  border-top: 4px solid #00bfff;
+  border-radius: 12px;
+  padding: 32px 24px;
+}
+
+.service-card__title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.service-card__descripcion {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* footer */
 footer {
-    background-color: #111;
-    color: white;
-    padding: 40px 20px;
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 220px;
+  flex: 1;
+  min-width: 220px;
 }
 
 .footer-section h3 {
-    margin-bottom: 15px;
-    color: #00bfff;
+  margin-bottom: 15px;
+  color: #00bfff;
 }
 
 .footer-section p,
 .footer-section a {
-    color: #ccc;
-    text-decoration: none;
-    line-height: 1.8;
+  color: #ccc;
+  text-decoration: none;
+  line-height: 1.8;
 }
 
 .footer-section a:hover {
-    color: white;
+  color: white;
 }
 
 .footer-social-links a {
-    display: block;
+  display: block;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #333;
-    padding-top: 15px;
-    color: #888;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  color: #888;
 }
 
 /* TABLET */
 @media (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 
-    .products {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
+  .footer-container {
+    gap: 40px;
+  }
 
-    .footer-container {
-        gap: 40px;
-    }
+  .footer-section {
+    min-width: 250px;
+  }
 
-    .footer-section {
-        min-width: 250px;
-    }
+  .services {
+    padding: 40px 20px;
+  }
+
+  .hero {
+    padding: 70px 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
 }
 
 /* MOBILE */
-
 @media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
 
-    .products {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 20px;
-    }
+  .card img {
+    height: 250px;
+  }
 
-    .card img {
-        height: 250px;
-    }
+  .card h3 {
+    font-size: 1.2rem;
+  }
 
-    .card h3 {
-        font-size: 1.2rem;
-    }
+  .card p {
+    font-size: 1rem;
+  }
 
-    .card p {
-        font-size: 1rem;
-    }
+  footer {
+    padding: 30px 20px;
+  }
 
-    footer {
-        padding: 30px 20px;
-    }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
 
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-    }
+  .footer-section {
+    width: 100%;
+  }
 
-    .footer-section {
-        width: 100%;
-    }
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
 
-    .footer-section h3 {
-        margin-bottom: 10px;
-    }
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+  }
 
-    .footer-bottom {
-        margin-top: 20px;
-        font-size: 14px;
-    }
+  .services__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
 }
