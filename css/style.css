@@ -4,8 +4,6 @@ body {
   background-color: #d9dfeb;
 }
 
-
-
 /* header */
 header {
   display: flex;
@@ -86,13 +84,15 @@ nav a:hover {
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 700;
+
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.4);
+  transition: 0.3s ease;
 }
 
 .hero-btn:hover {
   background-color: #009ecc;
+  transform: scale(1.05);
 }
-
-
 
 /* lista de productos */
 .products {
