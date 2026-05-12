@@ -161,7 +161,7 @@ const products = [
   },
 ];
 
-const container  = document.getElementById("products");
+const container = document.getElementById("products");
 
 products.forEach((product) => {
   container.innerHTML += `

@@ -1,101 +1,103 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="Logo">
-        <img src="https://tech-store.tn/wp-content/uploads/2022/12/logo-techstore-05-1024x266.png" alt="TechStore">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>TechStore</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="Logo">
+      <img src="https://tech-store.tn/wp-content/uploads/2022/12/logo-techstore-05-1024x266.png" alt="TechStore">
+    </div>
+    <nav>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#products">Productos</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>La mejor tecnología al mejor precio</h2>
+        <p>Encuentra teléfonos, laptops y accesorios gamer.</p>
+        <a href="#products" class="hero-btn">Ver productos</a>
       </div>
-      <nav>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#products">Productos</a></li>
-        <li><a href="#Ofertas">Ofertas</a></li>
-      </nav>
-    </header>
+    </section>
+    <section class="products" id="products"></section>
+    <script src="../javaScript/Products.js"></script>
 
-    <main class="main">
-      <section class="hero">
-        <div class="hero-text">
-          <h2>La mejor tecnología al mejor precio</h2>
-          <p>Encuentra teléfonos, laptops y accesorios gamer.</p>
-          <a href="#products" class="hero-btn">Ver productos</a>
-        </div>
-      </section>
-      <section class="products" id="products"></section>
-      <script src="../javaScript/Products.js"></script>
-
-      <!-- Seccion de servicios -->
-      <section class="services">
-        <h2 class="services__title">Nuestros Servicios</h2>
-        <p class="services__subtitle">Todo lo que necesitas en un solo lugar</p>
-        <!-- Contenedor padre -->
-        <div class="services__grid">
-          <div class="service-card">
-            <h3 class="service-card__title">Productos de Calidad</h3>
-            <p class="service-card__descripcion">
-              Ofrecemos los mejores productos electronicos de las mejores marcas con garantía oficial a super precios.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 class="service-card__title">Reparación Técnica</h3>
-            <p class="service-card__desc">
-              Diagnóstico y reparación profesional de laptops, celulares y
-              cualquier dispositivo electrónico.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 class="service-card__title">Envío a Domicilio</h3>
-            <p class="service-card__desc">
-              Recibe tus productos en la puerta de tu casa de forma rápida y
-              segura en todo el país
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-container">
-        <!-- Información del sitio -->
-        <div class="footer-section">
-          <h3>TechStore</h3>
-          <p>
-            Tu tienda de confianza para comprar laptops, celulares, accesorios y
-            tecnología de última generación.
+    <!-- Seccion de servicios -->
+    <section class="services">
+      <h2 class="services__title">Nuestros Servicios</h2>
+      <p class="services__subtitle">Todo lo que necesitas en un solo lugar</p>
+      <!-- Contenedor padre -->
+      <div class="services__grid">
+        <div class="service-card">
+          <h3 class="service-card__title">Productos de Calidad</h3>
+          <p class="service-card__descripcion">
+            Ofrecemos los mejores productos electronicos de las mejores marcas con garantía oficial a super precios.
           </p>
         </div>
 
-        <!-- Navegación -->
-        <div class="footer-section">
-          <h3>Enlaces</h3>
-          <a href="#">Inicio</a><br />
-          <a href="#products">Productos</a><br />
-          <a href="offers.html">Ofertas</a><br />
+        <div class="service-card">
+          <h3 class="service-card__title">Reparación Técnica</h3>
+          <p class="service-card__desc">
+            Diagnóstico y reparación profesional de laptops, celulares y
+            cualquier dispositivo electrónico.
+          </p>
         </div>
 
-        <!-- Redes sociales / Contacto -->
-        <div class="footer-section footer-social-links">
-          <h3>Contacto</h3>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <p>Email: info@techstore.com</p>
-          <p>Tel: +506 8888-8888</p>
+        <div class="service-card">
+          <h3 class="service-card__title">Envío a Domicilio</h3>
+          <p class="service-card__desc">
+            Recibe tus productos en la puerta de tu casa de forma rápida y
+            segura en todo el país
+          </p>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-bottom">
-        © 2026 TechStore - Todos los derechos reservados
+  <footer>
+    <div class="footer-container">
+      <!-- Información del sitio -->
+      <div class="footer-section">
+        <h3>TechStore</h3>
+        <p>
+          Tu tienda de confianza para comprar laptops, celulares, accesorios y
+          tecnología de última generación.
+        </p>
       </div>
-    </footer>
-  </body>
+
+      <!-- Navegación -->
+      <div class="footer-section">
+        <h3>Enlaces</h3>
+        <a href="#">Inicio</a><br />
+        <a href="#products">Productos</a><br />
+        <a href="ofertas.html">Ofertas</a><br />
+      </div>
+
+      <!-- Redes sociales / Contacto -->
+      <div class="footer-section footer-social-links">
+        <h3>Contacto</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <p>Email: info@techstore.com</p>
+        <p>Tel: +506 8888-8888</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 TechStore - Todos los derechos reservados
+    </div>
+  </footer>
+</body>
+
 </html>
